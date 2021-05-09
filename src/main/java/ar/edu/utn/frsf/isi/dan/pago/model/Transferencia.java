@@ -34,16 +34,8 @@ public class Transferencia extends MedioPago {
 	}
 
 	@Override
-	public boolean equals(Object obj) {
-		if (obj instanceof Transferencia)
-			return ((Transferencia) obj).getId().equals(id);
-		else
-			return false;
-	}
-
-	@Override
 	public String toString() {
-		return "Transferencia [cbuOrigen=" + cbuOrigen + ", cbuDestino=" + cbuDestino + ", codigoTransferencia="
+		return "Transferencia [id=" + id + ", cbuOrigen=" + cbuOrigen + ", cbuDestino=" + cbuDestino + ", codigoTransferencia="
 				+ codigoTransferencia + "]";
 	}
 

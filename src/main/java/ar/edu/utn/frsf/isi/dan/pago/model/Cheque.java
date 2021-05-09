@@ -36,16 +36,8 @@ public class Cheque extends MedioPago {
 	}
 
 	@Override
-	public boolean equals(Object obj) {
-		if (obj instanceof Cheque)
-			return ((Cheque) obj).getId().equals(id);
-		else
-			return false;
-	}
-
-	@Override
 	public String toString() {
-		return "Cheque [numeroCheque=" + numeroCheque + ", fechaCobro=" + fechaCobro + ", banco=" + banco + "]";
+		return "Cheque [id=" + id + ", numeroCheque=" + numeroCheque + ", fechaCobro=" + fechaCobro + ", banco=" + banco + "]";
 	}
 	
 }

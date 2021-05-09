@@ -16,16 +16,8 @@ public class Efectivo extends MedioPago {
 	}
 
 	@Override
-	public boolean equals(Object obj) {
-		if (obj instanceof Efectivo)
-			return ((Efectivo) obj).getId().equals(id);
-		else
-			return false;
-	}
-
-	@Override
 	public String toString() {
-		return "Efectivo [numeroRecibo=" + numeroRecibo + "]";
+		return "Efectivo [id=" + id + ", numeroRecibo=" + numeroRecibo + "]";
 	}
 
 }
