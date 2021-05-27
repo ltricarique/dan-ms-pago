@@ -1,15 +1,14 @@
 package ar.edu.utn.frsf.isi.dan.pago.repository;
 
 import ar.edu.utn.frsf.isi.dan.pago.model.Cliente;
-import ar.edu.utn.frsf.isi.dan.pago.model.Pago;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
+import java.util.Optional;
 
 @Repository
-public interface PagoRepository extends JpaRepository<Pago, Long> {
+public interface ClienteRepository extends JpaRepository<Cliente, Long> {
 
-    List<Pago> findAllByCliente(Cliente cliente);
+    Optional<Cliente> findById(Long id);
 
 }

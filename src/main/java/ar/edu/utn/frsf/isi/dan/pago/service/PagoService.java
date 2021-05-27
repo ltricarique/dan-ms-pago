@@ -11,7 +11,7 @@ public interface PagoService {
 
     Pago guardarPago(Pago pago);
 
-    List<Pago> obtenerPagosDeCliente(Long id);
+    List<Pago> obtenerEstadoCuenta(Long id);
 
 
 
