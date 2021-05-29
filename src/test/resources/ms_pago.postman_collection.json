@@ -1,0 +1,27 @@
+{
+	"info": {
+		"_postman_id": "16bb6089-9519-4f23-b359-ed75af7dd52f",
+		"name": "ms_pago",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registrar un Pago",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener estado de Cuenta de Cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
