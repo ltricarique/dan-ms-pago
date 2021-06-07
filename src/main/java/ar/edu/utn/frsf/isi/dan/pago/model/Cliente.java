@@ -1,5 +1,6 @@
 package ar.edu.utn.frsf.isi.dan.pago.model;
 
+import java.time.Instant;
 import java.util.Objects;
 
 import javax.persistence.Column;
@@ -24,6 +25,8 @@ public class Cliente
 	private String cuit;
 	@Column(name = "EMAIL")
 	private String email;
+	@Column(name = "FECHA_BAJA")
+	private Instant fechaBaja;
 
 	public Long getId()
 	{
@@ -65,6 +68,16 @@ public class Cliente
 		this.email = email;
 	}
 
+	public Instant getFechaBaja()
+	{
+		return fechaBaja;
+	}
+
+	public void setFechaBaja(Instant fechaBaja)
+	{
+		this.fechaBaja = fechaBaja;
+	}
+
 	@Override
 	public int hashCode()
 	{
@@ -87,7 +100,7 @@ public class Cliente
 	@Override
 	public String toString()
 	{
-		return "Cliente [id=" + id + ", razonSocial=" + razonSocial + ", cuit=" + cuit + ", email=" + email + "]";
+		return "Cliente [id=" + id + ", razonSocial=" + razonSocial + ", cuit=" + cuit + ", email=" + email + ", fechaBaja=" + fechaBaja + "]";
 	}
 
 }

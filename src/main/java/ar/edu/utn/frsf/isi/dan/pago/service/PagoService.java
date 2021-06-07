@@ -1,18 +1,13 @@
 package ar.edu.utn.frsf.isi.dan.pago.service;
 
-import ar.edu.utn.frsf.isi.dan.pago.model.Cliente;
-import ar.edu.utn.frsf.isi.dan.pago.model.Pago;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
 
+import ar.edu.utn.frsf.isi.dan.pago.model.Pago;
 
-public interface PagoService {
+public interface PagoService
+{
+	Pago guardarPago(Pago pago);
 
-    Pago guardarPago(Pago pago);
-
-    List<Pago> obtenerEstadoCuenta(Long id);
-
-
+	List<Pago> obtenerEstadoCuenta(Long id);
 
 }
