@@ -10,6 +10,7 @@ import javax.persistence.Table;
 
 /**
  * @author Leandro Heraldo Tricarique
+ * @author Francisco Tomas Gautero
  *
  */
 @Entity

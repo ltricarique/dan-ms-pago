@@ -7,6 +7,11 @@ import org.springframework.stereotype.Repository;
 
 import ar.edu.utn.frsf.isi.dan.pago.model.Cliente;
 
+/**
+ * @author Leandro Heraldo Tricarique
+ * @author Francisco Tomas Gautero
+ *
+ */
 @Repository
 public interface ClienteRepository extends JpaRepository<Cliente, Long>
 {

@@ -15,6 +15,11 @@ import ar.edu.utn.frsf.isi.dan.pago.repository.ClienteRepository;
 import ar.edu.utn.frsf.isi.dan.pago.repository.PagoRepository;
 import ar.edu.utn.frsf.isi.dan.pago.service.PagoService;
 
+/**
+ * @author Leandro Heraldo Tricarique
+ * @author Francisco Tomas Gautero
+ *
+ */
 @Service
 public class PagoServiceImpl implements PagoService
 {
